@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&family=Play:wght@400;700&display=swap');
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Play', sans-serif;
+}
+
+.home__section{
+    background-color: #fff;
+    height: 99vh;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5em;
+    font-weight: 700;
+    
+}
+
+.nav__list{
+   display: flex;
+   flex-direction: row;
+   column-gap: 4em;
+}
+
+li{
+    list-style: none;
+    
+}
+
+.landing__page{
+    padding-top: 10em;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5em;
+}
+
+.unity{
+    color: red;
+    font-weight: 400;
+}
+
+.disc{
+    font-size: 35px;
+}
+
+.Bauhaus{
+    font-size: 6em;
+    font-weight: 700;
+    }
+.landing__btn{
+    width: 10rem;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: .2s ease;
+    font-weight: 700;
+}
+
+.landing__btn:hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+
+.landing__text{
+    line-height: 1.8;
+    padding-bottom: 2em;
+}
+
+.land__col{
+    display: flex;
+    flex-direction: row;
+}
