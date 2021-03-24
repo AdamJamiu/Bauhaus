@@ -37,9 +37,11 @@ li{
 
 .landing__page{
     padding-top: 10em;
-    display: flex;
-    flex-direction: column;
     padding-left: 5em;
+}
+.row{
+    display: flex;
+    flex-direction: row;
 }
 
 .unity{
@@ -81,5 +83,5 @@ li{
 
 .land__col{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
