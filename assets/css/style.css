@@ -1,3 +1,12 @@
+/*===== 
+Author: Adam Jamiu {DLiTeCoder}
+Date: march/2021
+Github: https://github.com/AdamJamiu/
+Project repo: https://github.com/AdamJamiu/Bauhaus
+
+=====*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&family=Play:wght@400;700&display=swap');
 
 html{
@@ -12,22 +21,52 @@ body{
     background-color: #fff;
 }
 
+<<<<<<< HEAD
 div .home__section{
    
     height: 99vh;
+=======
+.home__section{
+    background-color: #fff;
+    height: 98vh;
+>>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
 
 .navbar{
+    font-weight: 500;
+    padding-left: 8em;
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     column-gap: 5em;
     font-weight: 700;   
+=======
+>>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
 
 .nav__list{
-   display: flex;
-   flex-direction: row;
-   column-gap: 4em;
+  display: flex;
+  flex-direction: row;
+}
+
+ .nav__items{
+    cursor: pointer;
+    display: inline-block;  
+    width: 100%;
+}
+
+ .nav__link:hover{
+    border: 2px solid black;
+}
+
+.nav__link{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+   
+}
+.brand__logo{
+    
 }
 
 li{
@@ -35,7 +74,13 @@ li{
     
 }
 
-.landing__page{
+header{
+   background-image: url("assets/img/bauhaus-removebg-preview.png");
+   background-position: contain;
+   background-repeat: no-repeat;
+}
+
+.row{
     padding-top: 10em;
     padding-left: 15em;
     background: url("assets/img/bauhaus.jpg");
@@ -45,7 +90,11 @@ li{
 .row{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     
+=======
+    padding-left: 5em;
+>>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
 
 .unity{
@@ -109,4 +158,9 @@ li{
 .land__col{
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    
+    
+>>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
