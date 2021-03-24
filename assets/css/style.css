@@ -1,4 +1,5 @@
 /*===== 
+project name: Bauhaus Landing Page
 Author: Adam Jamiu {DLiTeCoder}
 Date: march/2021
 Github: https://github.com/AdamJamiu/
@@ -21,10 +22,7 @@ body{
     background-color: #fff;
 }
 
-div .home__section{
-   
-    height: 99vh;
-}
+
 .home__section{
     background-color: #fff;
     height: 98vh;
@@ -36,32 +34,23 @@ div .home__section{
     display: flex;
     flex-direction: row;
     column-gap: 5em;
-    font-weight: 700;   
+    
 }
 
-.nav__list{
-  display: flex;
-  flex-direction: row;
-}
 
  .nav__items{
     cursor: pointer;
     display: inline-block;  
-    width: 100%;
+    
 }
 
- .nav__link:hover{
-    border: 2px solid black;
-}
+ 
 
 .nav__link{
     color: black;
     text-decoration: none;
     text-align: center;
    
-}
-.brand__logo{
-    
 }
 
 li{
@@ -120,6 +109,7 @@ header{
 .Bauhaus{
     font-size: 6em;
     font-weight: 700;
+    padding: 0;
     }
 .landing__btn{
     width: 10rem;
@@ -143,9 +133,40 @@ header{
 .landing__text{
     line-height: 1.8;
     padding-bottom: 2em;
+    letter-spacing: 1px;
+    word-spacing: 1px;
 }
 
 .land__col{
     display: flex;
     flex-direction: column;
+}
+
+/* Brands section*/
+
+.brands__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3em;
+    padding-top: 5em;
+}
+
+.logo__list{
+    width: 8em;
+    height: 2em;
+}
+
+/* Brands section*/
+
+.moderism-wrap{
+    display: flex;
+    flex-direction: row;
+    
+    padding-top: 10em;
+    gap: 10em;
+}
+.living-room{
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
 }
