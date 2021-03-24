@@ -21,15 +21,13 @@ body{
     background-color: #fff;
 }
 
-<<<<<<< HEAD
 div .home__section{
    
     height: 99vh;
-=======
+}
 .home__section{
     background-color: #fff;
     height: 98vh;
->>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
 
 .navbar{
@@ -37,11 +35,8 @@ div .home__section{
     padding-left: 8em;
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
     column-gap: 5em;
     font-weight: 700;   
-=======
->>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
 
 .nav__list{
@@ -90,11 +85,6 @@ header{
 .row{
     display: flex;
     flex-direction: row;
-<<<<<<< HEAD
-    
-=======
-    padding-left: 5em;
->>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
 
 .unity{
@@ -158,9 +148,4 @@ header{
 .land__col{
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-=======
-    
-    
->>>>>>> 2acbed4667340aa85906d1b813457e093d64a913
 }
