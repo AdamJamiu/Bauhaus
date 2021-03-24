@@ -10,9 +10,11 @@ Project repo: https://github.com/AdamJamiu/Bauhaus
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&family=Play:wght@400;700&display=swap');
 
+
 html{
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
 
 body{
@@ -26,7 +28,7 @@ body{
 
 .home__section{
     background-color: #fff;
-    height: 98vh;
+    max-height: 98vh;
 }
 .brand__logo{
     width: 120px;
@@ -44,7 +46,7 @@ body{
 
 .nav{
     display: block;
-    background-color: red;
+   padding-top: 1em;
     
 }
 
@@ -88,7 +90,7 @@ header{
     }
 
 .row{
-    padding-top: 10em;
+    padding-top: 6em;
     padding-left: 10em;
     background: url("assets/img/bauhaus.jpg");
     background-repeat: no-repeat;
@@ -97,10 +99,6 @@ header{
     flex-direction: row;
 }
 
-.unity{
-    color: red;
-    font-weight: 400;
-}
 .bauhaus-wrap { 
     position:relative;
     margin-left: 20em;
@@ -124,11 +122,16 @@ header{
     z-index: 3; 
 }
 .disc{
-    font-size: 35px;
+    font-size: 23px;
+}
+.unity{
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .Bauhaus{
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 700;
     padding: 0;
     }
@@ -142,7 +145,7 @@ header{
     cursor: pointer;
     border: none;
     transition: .2s ease;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .landing__btn:hover{
@@ -152,9 +155,8 @@ header{
 }
 
 .landing__text{
-    line-height: 1.8;
+    line-height: 1.6;
     padding-bottom: 2em;
-    letter-spacing: 1px;
     word-spacing: 1px;
 }
 
@@ -182,31 +184,63 @@ header{
 .moderism-wrap{
     display: flex;
     flex-direction: row;
-    padding-top: 10em;
-    gap: 10em;
+    padding-top: 7em;
+    gap: 7em;
 }
 .living-room{
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
 }
 
 .sub__row{
     display: flex;
     flex-direction: row;
     padding-left: 5em;
-    gap: 5em;
-    background-color: green;
+    column-gap: 3em;
+    row-gap: 1.1em;
     flex-wrap: wrap;
+    width: 590px;
 }
 
 .sub__col{
-    border: 2px solid black;
+    
     width: 250px;
 }
 
 .sub__btn{
     position: relative;
-    
+    font-weight: 600;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.sub__btn:hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}
+
+.mies{
+    font-family: 'Josefin Sans', sans-serif;;
+    line-height: 0;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 50px;
+}
+
+.sub__text{
+    line-height: 1.5;
+    word-spacing: 1px;
+    text-align: left;
+    font-size: 15px;
 }
 
 
