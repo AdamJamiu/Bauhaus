@@ -261,10 +261,39 @@ button .sub__btn:hover{
 
   /* Stock sections*/
 
-  .stock__section{
-      padding-top: 4em;
-      background-color: whitesmoke;
-  }
+
+  .stock__section {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    justify-content: flex-start;
+
+    padding-top: 4em;
+      background: rgb(242, 242, 242);
+}
+
+
+  @media only screen and (min-width: 1024px){
+.stock__section {
+    padding: 0px 54px;
+    width: 100%;
+}
+@media only screen and (min-width: 640px){
+.stock__section {
+    padding: 0px 48px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 480px){
+
+.stock__section {
+    padding: 0px 32px;
+    width: 100%;
+}
+
+
 
   .prop-row{
       display: flex;
@@ -298,16 +327,18 @@ button .sub__btn:hover{
   }
 
   .goods__list-col{
-      background-color: #fff;
-      cursor: pointer;
-      text-align: center;
-      width: fit-content;
-      box-shadow:   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-      0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-      0 12.5px 10px rgba(0, 0, 0, 0.06),
-      0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-      0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-      0 100px 80px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-flow: column nowrap;
+    width: auto;
+    height: 424px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    min-width: 244px;
+    max-width: 288px;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 13%) 0px 3.2px 7.2px 0px, rgb(0 0 0 / 11%) 0px 0.6px 1.8px 0px;
+    overflow: hidden;
   }
 
   .price{
