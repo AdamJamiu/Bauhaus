@@ -429,13 +429,14 @@ button .sub__btn:hover{
       display: flex;
       flex-direction: row;
       gap: 6em;
+      
   }
 
   .marcel__wrap{
       display: flex;
       flex-direction: row;
       gap: 3em;
-
+      
   }
 
   .marcel__col{
@@ -443,4 +444,22 @@ button .sub__btn:hover{
       align-items: flex-end;
       width: fit-content;
       flex-wrap: wrap;
+  }
+
+  .marcel__btn{
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-right: 2em;
+      padding-left: 2em;
+      color: white;
+      background-color: black;
+      border-radius: 12px;
+      border: 1px solid black;
+      transition: .2s ease;
+
+  }
+
+  .marcel__btn:hover{
+      background-color: #fff;
+      color: black;
   }
