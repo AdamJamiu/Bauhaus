@@ -22,14 +22,12 @@ body{
     font-family: 'Mulish', sans-serif;
     font-family: 'Play', sans-serif;
     background-color: #fff;
-    
-    
 }
 
 
 .home__section{
     background-color: #fff;
-    max-height: 98vh;
+    
 }
 .brand__logo{
     width: 120px;
@@ -86,38 +84,49 @@ li{
     
 }
 
-header{
-   
-    }
 
 .row{
     padding-top: 6em;
     padding-left: 10em;
-    background: url("assets/img/bauhaus.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+    gap: 12em;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-.bauhaus-wrap { 
-    position:relative;
-    margin-left: 20em;
+@media only screen and (max-width: 950px){
     
- }
+
+    
+}
+
+@media only screen and (max-width: 850px){
+    .vector{
+        width: 350px;
+    }
+
+    .row{
+        gap: 3em;
+         flex-direction: column-reverse;
+         margin-top: 4em;
+         padding: 1em;
+         align-items: center;
+    }
+
+    
+}
+
+
 .vector{
-    position:absolute; 
-    bottom: 0px; 
-    left: -100px; 
-    z-index: 1;    
-    border-radius: 100px;
-    width: 100%;
-    height: 300px;
+
+    
 }
 
 
 .bauhaus-design{
-    position:absolute; 
+    
     top: 70px; 
     left: 100px; 
     z-index: 3; 
@@ -186,7 +195,9 @@ header{
     display: flex;
     flex-direction: row;
     padding-top: 7em;
+    padding-bottom: 7em;
     gap: 7em;
+    
 }
 .living-room{
     border-top-right-radius: 300px;
@@ -202,6 +213,12 @@ header{
     row-gap: 1.1em;
     flex-wrap: wrap;
     
+}
+
+@media only screen and (max-width: 1000px) {
+    .sub__row{
+        padding: 0;
+    }
 }
 
 .sub__col{
@@ -222,7 +239,7 @@ header{
     color: #fff;
     cursor: pointer;
     transition: .1s ease-in-out;
-    border: ;
+    
 }
 
 button .sub__btn:hover{
@@ -233,10 +250,20 @@ button .sub__btn:hover{
 
 .mies{
     font-family: 'Josefin Sans', sans-serif;;
-    line-height: 0;
-   
+    font-weight: bolder;
+    
+    flex-wrap: wrap;
     word-spacing: 2px;
     font-size: 50px;
+}
+
+.school{
+    color: red;
+}
+
+.furniiture-txt{
+    font-weight: 600;
+    font-size: 21px;
 }
 
 .sub__text{
@@ -267,7 +294,7 @@ button .sub__btn:hover{
   .stock__section {
 
     padding-top: 4em;
-      background: rgb(242, 242, 242);
+      background: white;
 }
 
 
@@ -281,6 +308,8 @@ button .sub__btn:hover{
     
 }
 
+}
+
 @media only screen and (min-width: 480px){
 
 .stock__section {
@@ -288,12 +317,21 @@ button .sub__btn:hover{
     
 }
 
+}
+
+@media screen only and (max-width: 650px){
+    .vector{
+        visibility: hidden;
+    }
+}
+
   .prop-row{
-      display: flex;
-      flex-direction: row;
-        gap: 5em;
-        padding-bottom: 3em;
-        padding-left: 3em;
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-left: 3em;
 
   }
 
@@ -301,9 +339,8 @@ button .sub__btn:hover{
       display: flex;
       float: right;
       justify-content: flex-end;
-      flex-direction: row;
-     
-      width: 100%;
+      flex-direction: row; 
+      width: 70%;
   }
 
   .bx-chevron-down{
@@ -315,11 +352,21 @@ button .sub__btn:hover{
       flex-direction: row;
       gap:3em;
       flex-wrap: wrap;
+      margin-bottom: 5em;
   }
+
+  .stock__list-row{
+    display: flex;
+    flex-direction: row;
+    gap:3em;
+    flex-wrap: wrap;
+}
+
+
 
   .stock-list{
       width: 10em;
-      height: 12em;
+      height: 10em;
       padding-top: 2em;
       padding-right: 3em;
       padding-left: 3em;
@@ -328,16 +375,23 @@ button .sub__btn:hover{
   .goods__list-col{
     display: flex;
     flex-flow: column nowrap;
-    width: auto;
-    height: 424px;
-    box-sizing: border-box;
-    flex-grow: 1;
+    width: fit-content;
+    height: fit-content;
     background-color: rgb(255, 255, 255);
     min-width: 244px;
     max-width: 288px;
     border-radius: 4px;
-    box-shadow: rgb(0 0 0 / 13%) 0px 3.2px 7.2px 0px, rgb(0 0 0 / 11%) 0px 0.6px 1.8px 0px;
+    box-shadow: rgb(0 0 0 / 13%) 1px 5.2px 8.2px 1px, rgb(0 0 0 / 11%) 0px 0.6px 1.8px 0px;
     overflow: hidden;
+    align-items: center;
+    height: fit-content;
+    cursor: pointer;
+    transition: .2s ease-in;
+    padding-bottom: 2em;
+  }
+
+  .goods__list-col:hover{
+      transform: scale(1.1);
   }
 
   .price{
