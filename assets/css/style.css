@@ -132,7 +132,8 @@ li{
     z-index: 3; 
 }
 .disc{
-    font-size: 23px;
+    font-size: 30px;
+    font-weight: 600;
 }
 .unity{
     color: red;
@@ -182,7 +183,7 @@ li{
     flex-direction: row;
     justify-content: center;
     column-gap: 3em;
-    padding-top: 5em;
+    padding-top: 8em;
 }
 
 .logo__list{
