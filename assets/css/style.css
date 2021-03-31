@@ -68,7 +68,7 @@ body{
     padding-bottom: 0.5em;
     padding-right: 2em;
     padding-left: 2em;
-    border-radius: 10px;
+    border-radius: 20px;
     transition: .2s ease;
     font-weight: 600;
     
@@ -121,7 +121,7 @@ li{
 
 .vector{
 
-    
+
 }
 
 
@@ -150,6 +150,8 @@ li{
     width: 10rem;
     padding-top: 1em;
     padding-bottom: 1em;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
     background-color: black;
     color: #fff;
     border-radius: 10px;
@@ -200,6 +202,17 @@ li{
     gap: 7em;
     
 }
+@media only screen and (max-width: 840px){
+    .moderism-wrap{
+        flex-direction: column;
+    }
+
+    #mies-wrap{
+        padding-left: 3em;
+        justify-content: center;
+
+    }
+}
 .living-room{
     border-top-right-radius: 300px;
     border-bottom-right-radius: 300px;
@@ -232,10 +245,10 @@ li{
     font-weight: 600;
     padding-top: 1em;
     padding-bottom: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     border: 2px solid black;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: black;
     color: #fff;
     cursor: pointer;
@@ -252,7 +265,6 @@ button .sub__btn:hover{
 .mies{
     font-family: 'Josefin Sans', sans-serif;;
     font-weight: bolder;
-    
     flex-wrap: wrap;
     word-spacing: 2px;
     font-size: 50px;
@@ -436,26 +448,27 @@ button .sub__btn:hover{
       display: flex;
       flex-direction: row;
       gap: 3em;
-      
+      width: 80%;
+      flex-wrap: wrap;
   }
 
   .marcel__col{
       display: flex;
+      width: 300px;
       align-items: flex-end;
-      width: fit-content;
-      flex-wrap: wrap;
   }
 
   .marcel__btn{
       padding-top: 1em;
       padding-bottom: 1em;
-      padding-right: 2em;
-      padding-left: 2em;
+      padding-right: 2.5em;
+      padding-left: 2.5em;
       color: white;
       background-color: black;
-      border-radius: 12px;
+      border-radius: 20px;
       border: 1px solid black;
       transition: .2s ease;
+      
 
   }
 
@@ -463,3 +476,4 @@ button .sub__btn:hover{
       background-color: #fff;
       color: black;
   }
+  
