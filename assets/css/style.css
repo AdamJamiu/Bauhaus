@@ -25,6 +25,11 @@ body{
 }
 
 
+.top-button{
+    position:fixed;
+    transform: translate(-50%, -50%);
+}
+
 .home__section{
     background-color: #fff;
     
@@ -34,12 +39,13 @@ body{
     height: 50px;
 }
 
+
 .navbar{
     padding-top: 2em;
     padding-left: 10em;
     display: flex;
     flex-direction: row;
-    column-gap: 10em;
+    column-gap: 15em;
     overflow: hidden;
 }
 
@@ -96,12 +102,32 @@ li{
     flex-wrap: nowrap;
 }
 
-@media only screen and (max-width: 950px){
-    
+@media only screen and (max-width: 900px){
+    .row{
+        padding-left: 3em;
+        padding-right: 3em;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar{
+        padding-left: 2em;
+    }
+    .nav{
+        padding-left: 0rem;
+        padding-right: 0;
+    }
 
     
 }
 
+@media only screen and (max-width: 400px){
+    .row{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}
 @media only screen and (max-width: 850px){
     .vector{
         width: 350px;
@@ -185,7 +211,21 @@ li{
     flex-direction: row;
     justify-content: center;
     column-gap: 3em;
-    padding-top: 8em;
+    margin-top: 10em;
+}
+
+@media only screen and (max-width: 400px){
+    .brands__wrapper{
+        flex-direction: column;
+        gap: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo__list{
+        width: 100%;
+        height: fit-content;
+    }
 }
 
 .logo__list{
@@ -207,10 +247,9 @@ li{
         flex-direction: column;
     }
 
-    #mies-wrap{
+    .mies-wrap{
         padding-left: 3em;
-        justify-content: center;
-
+        
     }
 }
 .living-room{
@@ -235,6 +274,19 @@ li{
     }
 }
 
+
+@media only screen and (max-width: 595px) {
+    .sub__row{
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .sub__col{
+        width: fit-content;
+        
+    }
+}
 .sub__col{
     
     width: 250px;
@@ -272,6 +324,7 @@ button .sub__btn:hover{
 
 .school{
     color: red;
+    line-height: 3;
 }
 
 .furniiture-txt{
@@ -315,6 +368,7 @@ button .sub__btn:hover{
 .stock__section {
     padding: 0px 54px;
 }
+  }
 @media only screen and (min-width: 640px){
 .stock__section {
     padding: 0px 48px;
@@ -332,7 +386,7 @@ button .sub__btn:hover{
 
 }
 
-@media screen only and (max-width: 650px){
+@media  only screen and (max-width: 650px){
     .vector{
         visibility: hidden;
     }
@@ -375,6 +429,16 @@ button .sub__btn:hover{
     flex-wrap: wrap;
 }
 
+@media only screen and (max-width: 620px){
+    .stock__list-row-1{
+        display: flex;
+        flex-direction: column;
+        gap:3em;
+        padding: 0;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
 
 
   .stock-list{
@@ -448,14 +512,17 @@ button .sub__btn:hover{
       display: flex;
       flex-direction: row;
       gap: 3em;
-      width: 80%;
+      width: 50%;
       flex-wrap: wrap;
+      justify-content: center;
   }
+
 
   .marcel__col{
       display: flex;
       width: 300px;
       align-items: flex-end;
+
   }
 
   .marcel__btn{
@@ -468,12 +535,30 @@ button .sub__btn:hover{
       border-radius: 20px;
       border: 1px solid black;
       transition: .2s ease;
-      
-
+      cursor: pointer;
   }
 
   .marcel__btn:hover{
       background-color: #fff;
       color: black;
   }
+
+  .marcel-img{
+      width: 350px;  
+    }
+
+  .marcel-img:after{
+      content: '';
+      width: 380px;
+      background-color: #ff4d54;
+      border-radius: 300px;
+  }
+
+  .marcel__text{
+    line-height: 1.5;
+    word-spacing: 1px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
   
