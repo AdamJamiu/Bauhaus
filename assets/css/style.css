@@ -180,7 +180,7 @@ li{
     padding-left: 2.5em;
     background-color: black;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 7px;
     cursor: pointer;
     border: none;
     transition: .2s ease;
@@ -300,7 +300,7 @@ li{
     padding-left: 2.5em;
     padding-right: 2.5em;
     border: 2px solid black;
-    border-radius: 20px;
+    border-radius: 7px;
     background-color: black;
     color: #fff;
     cursor: pointer;
@@ -358,35 +358,38 @@ button .sub__btn:hover{
 
 
   .stock__section {
-
     padding-top: 4em;
       background: white;
 }
 
-
-  @media only screen and (min-width: 1024px){
-.stock__section {
-    padding: 0px 54px;
+.stock__list-row-1{
+    display: flex;
+    flex-direction: row;
+    gap:3em;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+    padding-left: 10em;
 }
-  }
-@media only screen and (min-width: 640px){
-.stock__section {
-    padding: 0px 48px;
+
+.stock__list-row{
+  display: flex;
+  flex-direction: row;
+  gap:3em;
+  flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 750px){
     
-}
+    .stock__section {
+        padding:1em;
+    }
 
-}
+    .stock__list-row-1{
+        padding-left: 0;
+        gap:3em;
+    }
 
-@media only screen and (min-width: 480px){
-
-.stock__section {
-    padding: 0px 32px;
-    
-}
-
-}
-
-@media  only screen and (max-width: 650px){
     .vector{
         visibility: hidden;
     }
@@ -414,31 +417,8 @@ button .sub__btn:hover{
       cursor: pointer;
   }
 
-  .stock__list-row-1{
-      display: flex;
-      flex-direction: row;
-      gap:3em;
-      flex-wrap: wrap;
-      margin-bottom: 5em;
-  }
+ 
 
-  .stock__list-row{
-    display: flex;
-    flex-direction: row;
-    gap:3em;
-    flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 620px){
-    .stock__list-row-1{
-        display: flex;
-        flex-direction: column;
-        gap:3em;
-        padding: 0;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-}
 
 
   .stock-list{
@@ -484,10 +464,23 @@ button .sub__btn:hover{
       padding: 10em 5em;
   }
 
+  @media only scree and (max-width: 1000px){
+
+    .marcel-breauer{
+      padding: 10em 5em;
+  }
+
+  .marcel__wrap{
+      padding-left: 0;
+      
+  }
+
+  }
+
   .marcel__title{
       color: red;
       font-weight: 500;
-      font-size: 16px
+      font-size: 16px;
   }
 
   .marcel__name{
@@ -508,14 +501,16 @@ button .sub__btn:hover{
       
   }
 
+  #text-row{
+    padding-top: 8em;
+    padding-left: 3.5em;
+}
   .marcel__wrap{
       display: flex;
       flex-direction: row;
       gap: 3em;
-      width: 50%;
       flex-wrap: wrap;
-      justify-content: center;
-  }
+ }
 
 
   .marcel__col{
@@ -532,7 +527,7 @@ button .sub__btn:hover{
       padding-left: 2.5em;
       color: white;
       background-color: black;
-      border-radius: 20px;
+      border-radius: 7px;
       border: 1px solid black;
       transition: .2s ease;
       cursor: pointer;
