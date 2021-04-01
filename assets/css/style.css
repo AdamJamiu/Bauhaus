@@ -145,11 +145,6 @@ li{
 }
 
 
-.vector{
-
-
-}
-
 
 .bauhaus-design{
     
@@ -365,10 +360,10 @@ button .sub__btn:hover{
 .stock__list-row-1{
     display: flex;
     flex-direction: row;
-    gap:3em;
+    gap: 3em;
     flex-wrap: wrap;
     margin-bottom: 5em;
-    padding-left: 10em;
+    padding-left: 15em;
 }
 
 .stock__list-row{
@@ -386,7 +381,7 @@ button .sub__btn:hover{
     }
 
     .stock__list-row-1{
-        padding-left: 0;
+        padding-left: 1em;
         gap:3em;
     }
 
@@ -557,15 +552,19 @@ button .sub__btn:hover{
       color: black;
   }
 
-  .marcel-img{
-      width: 350px;  
+ .marcel-img{
+        border-bottom-left-radius: 200px;
+        border-bottom-right-radius: 200px;
+      height: fit-content;
+      margin-top: 4em;  
     }
 
-  .marcel-img:after{
+ .marcel-img::before{
       content: '';
-      width: 380px;
+      position: absolute;
+      top: 0;
+      width: 540px;
       background-color: #ff4d54;
-      border-radius: 300px;
   }
 
   .marcel__text{
