@@ -398,6 +398,7 @@ button .sub__btn:hover{
   .prop-row{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 5em;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -425,23 +426,19 @@ button .sub__btn:hover{
       width: 10em;
       height: 10em;
       padding-top: 2em;
-      padding-right: 3em;
-      padding-left: 3em;
   }
 
   .goods__list-col{
     display: flex;
     flex-flow: column nowrap;
-    width: fit-content;
     height: fit-content;
     background-color: rgb(255, 255, 255);
-    min-width: 244px;
-    max-width: 288px;
+    min-width: 204px;
+    max-width: 250px;
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 13%) 1px 5.2px 8.2px 1px, rgb(0 0 0 / 11%) 0px 0.6px 1.8px 0px;
     overflow: hidden;
     align-items: center;
-    height: fit-content;
     cursor: pointer;
     transition: .2s ease-in-out;
     padding-bottom: 2em;
@@ -468,6 +465,7 @@ button .sub__btn:hover{
 
     .marcel-breauer{
       padding: 10em 5em;
+     
   }
 
   .marcel__wrap{
@@ -500,8 +498,29 @@ button .sub__btn:hover{
       gap: 6em;
       
   }
+  @media only screen and (max-width: 850px){
+    .marcel__row{
+        flex-direction: column;
+        gap: 6em;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
-  #text-row{
+    .marcel__wrap{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    #text-row{
+        padding: 0;
+    }
+
+
+  }
+
+  .text-row{
     padding-top: 8em;
     padding-left: 3.5em;
 }
